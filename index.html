@@ -1,196 +1,182 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>:::Tienda de Pokemon :::</title>
-  </head>
-  <body>
-    <nav class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse d-flex justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </nav>
+</head>
 
-    <header>
-      <div class="container">
+<body>
+  <nav class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </nav>
+
+  <header>
+    <div class="container">
         <h1 class="text-center mt-3">TIENDA</h1>
         <hr />
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <section class="store">
-      <div class="container">
+  <section class="store">
+    <div class="container">
         <div class="item">
-          <div class="row justify-content-between cardItem">
-            <div class="card col-lg-3">
-              <img src="./img/pokemon-azul.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Pokemon Azul</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">$ 9.9</li>
-                
-              </ul>
-              <div class="card-body">
-                <a href="#" class="btn btn-primary">Agregar</a>
-              </div>
+            <div class="row justify-content-between cardItem gap-2">
+                <!-- <div class="card col-lg-3">
+                    <img src="./img/pokemon-azul.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Pokemon Azul</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card’s content.
+                        </p>
+                    </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">$ 9.9</li>
+
+                        </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Agregar</a>
+                    </div>
+                </div> -->
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="shopping-cart">
-      <div class="container">
+    </div>
+  </section>
+  <section class="shopping-cart">
+    <div class="container">
         <h1 class="text-center">CARRITO</h1>
         <hr />
         <div class="row">
-          <div class="col-6">
-            <div class="shopping-cart-header">
-              <h6>Producto</h6>
+            <div class="col-6">
+                <div class="shopping-cart-header">
+                    <h6>Producto</h6>
+                </div>
             </div>
-          </div>
-          <div class="col-2">
-            <div class="shopping-cart-header">
-              <h6 class="text-truncate">Precio</h6>
+            <div class="col-2">
+                <div class="shopping-cart-header">
+                    <h6 class="text-truncate">Precio</h6>
+                </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="shopping-cart-header">
-              <h6>Cantidad</h6>
+            <div class="col-4">
+                <div class="shopping-cart-header">
+                    <h6>Cantidad</h6>
+                </div>
             </div>
-          </div>
         </div>
         <!-- ? START SHOPPING CART ITEMS -->
-            <div class="shopping-cart-items shoppingCartItemsContainer">
-                <!-- MOCKUP EXAMPLE (DELETE) -->
-                <div class="row shoppingCartItem">
-                    <div class="col-6">
-                        <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                            <img src='./img/sonic.jpg' class="shopping-cart-image">
-                            <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Sonic
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                            <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div
-                            class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-                            <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
-                                value="1">
-                            <button class="btn btn-danger buttonDelete" type="button">X</button>
-                        </div>
+        <div class="shopping-cart-items shoppingCartItemsContainer">
+            <!-- MOCKUP EXAMPLE (DELETE) -->
+            <div class="row shoppingCartItem">
+                <div class="col-6">
+                    <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                        <img src='./img/sonic.jpg' class="shopping-cart-image">
+                        <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Sonic
+                        </h6>
                     </div>
                 </div>
-                <!-- END MOCKUP EXAMPLE -->
-            </div>
-            <!-- ? END SHOPPING CART ITEMS -->
-
-            <!-- START TOTAL -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0">Total</p>
-                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
+                <div class="col-2">
+                    <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                        <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div
+                    class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                        <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+                        <button class="btn btn-danger buttonDelete" type="button">X</button>
                     </div>
                 </div>
             </div>
-
-            <!-- END TOTAL -->
-          <!-- <div class="row shoppingCartItem">
-                    <div class="col-6">
-                        <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                            <img src='./img/sonic.jpg' class="shopping-cart-image">
-                            <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ms-3 mb-0">Sonic
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                            <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div
-                            class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-                            <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
-                                value="1">
-                            <button class="btn btn-danger buttonDelete" type="button">X</button>
-                        </div>
-                    </div>
-                </div> -->
-          <!-- END MOCKUP EXAMPLE -->
+            <!-- END MOCKUP EXAMPLE -->
         </div>
         <!-- ? END SHOPPING CART ITEMS -->
 
-       
-      </div>
-    </section>
+        <!-- START TOTAL -->
+        <div class="row">
+            <div class="col-12">
+                <div class="shopping-cart-total d-flex align-items-center">
+                    <p class="mb-0">Total</p>
+                    <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                        <div class="toast-header">
+                            <span>✅</span>
+                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body text-white">
+                            Se aumentó correctamente la cantidad
+                        </div>
+                    </div>
+                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                    data-target="#comprarModal">Comprar</button>
+                </div>
+            </div>
+        </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+        <!-- END TOTAL -->
+        <!-- <div class="row shoppingCartItem">
+                        <div class="col-6">
+                            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <img src='./img/sonic.jpg' class="shopping-cart-image">
+                                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ms-3 mb-0">Sonic
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                                <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div
+                                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                                    value="1">
+                                <button class="btn btn-danger buttonDelete" type="button">X</button>
+                            </div>
+                        </div>
+                    </div> -->
+        <!-- END MOCKUP EXAMPLE -->
+    </div>
+    <!-- ? END SHOPPING CART ITEMS -->
+
+
+    </div>
+  </section>
+
+  <script src="./js/main.js"></script>
+</body>
 </html>
