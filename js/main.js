@@ -49,10 +49,13 @@ const carrito = [
     },
 ];
 
+// Renderizar cada una de las card del array de objetos
 const cardItems = document.querySelector('.cardItem');
 
+let card = "";
+
 carrito.forEach((item) => {
-    cardItems.innerHTML += `
+    card += `
         <div class="card col-lg-3 mb-4">
             <img src="${item.imagen}" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -63,12 +66,64 @@ carrito.forEach((item) => {
                 </p>
             </div>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item">${item.precio}</li>
+                <li class="list-group-item">$ ${item.precio}</li>
 
                 </ul>
             <div class="card-body">
-                <a href="#" class="btn btn-primary">Agregar</a>
+                <a href="#" class="btn btn-primary addToCart">Agregar</a>
             </div>
         </div>
     `;
 });
+
+cardItems.innerHTML = card;
+
+// Capturar todos los botones para luego agregarle un evento click
+const productCart = document.querySelectorAll('.addToCart');
+
+productCart.forEach(button => {
+    button.addEventListener("click", catchProduct);
+});
+
+function catchProduct(e) {
+    const button = e.target;
+    const item = button.closest('.card');
+    let title = item.querySelector('.card-title').textContent;
+    let price = item.querySelector('.list-group-item').textContent;
+    let image = item.querySelector('.card-img-top').src;
+
+    // Se crea una funcion para agregar los elementos
+    addItemCart(title, price, image);
+};
+
+const addCartProduct = document.querySelector('.shopping-cart-items');
+
+function addItemCart(title, price, image) {
+    const addCartRow = document.createElement('div');
+    const shoppItemTemplate = `
+        <div class="row shoppingCartItem">
+            <div class="col-6">
+                <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                    <img src='${image}' class="shopping-cart-image">
+                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ms-3 mb-0">${title}
+                    </h6>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                    <p class="item-price mb-0 shoppingCartItemPrice">${price}</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div
+                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                    <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+                    <button class="btn btn-danger buttonDelete" type="button">X</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    addCartRow.innerHTML = shoppItemTemplate;
+    addCartProduct.append(addCartRow);
+};
